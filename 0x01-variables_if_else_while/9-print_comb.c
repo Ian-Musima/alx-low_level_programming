@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	int i = 48;
+	int i;
 
-	while (i < 58)
+	for (i = 48; i < 58; i++)
 	{
+		putchar(i);
+
 		if (i != 57)
 		{
-			putchar(i);
 			putchar(',');
 			putchar(' ');
-			i++;
 		}
 	}
 	putchar('\n');
