@@ -7,7 +7,7 @@
 *
 *Return: Always 0
 */
-int_abs(int i)
+int _abs(int i)
 {
 if (i < 0)
 {
