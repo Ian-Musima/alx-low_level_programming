@@ -19,6 +19,10 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
+			else if (j == 0)
+			{
+				_putchar(answer + '0');
+			}
 			if (answer >= 10)
 			{
 				_putchar((answer / 10) + '0');
