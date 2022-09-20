@@ -1,11 +1,11 @@
 #include "main.h"
 /**
 * rev_string - reverse a string
-* @s: string to be evaluated
+* @s: string to be reversed
 */
 void rev_string(char *s)
 {
-	int i, j, temp;
+	int i, j, tmp;
 
 	i = 0;
 	j = 0;
@@ -16,8 +16,8 @@ void rev_string(char *s)
 	j--;
 	while (j > i)
 	{
-		temp = s[j];
+		tmp = s[j];
 		s[j--] = s[i];
-		s[i++] = temp;
+		s[i++] = tmp;
 	}
 }
