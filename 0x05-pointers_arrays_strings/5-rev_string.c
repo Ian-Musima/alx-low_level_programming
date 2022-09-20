@@ -1,21 +1,18 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- *rev_string - function reverses string
- *@s: string to be reversed.
- *
- */
-void rev_string(char *s)
+* puts_half - print second half of a string
+* @str: char array string type
+* Description: If odd number of chars, print (length - 1) / 2
+*/
+void puts_half(char *str)
 {
-	int i = 0, j = 0, k = 0;
+	int i;
 
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 		i++;
-
-	for (j = i; j >= 0; j--)
+	for (i /= 2; str[i] != '\0'; i++)
 	{
-		s[k] = s[j];
-		k++;
-
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
