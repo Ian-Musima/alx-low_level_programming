@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * puts_half - prints second half of a string
 * @str: string to be evaluated
