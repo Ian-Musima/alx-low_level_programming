@@ -4,11 +4,11 @@
 /**
  *alloc_grid - returns a pointer to a
  * 2-D array of integers.
- *widht:number of columns
- *height:number of rows
+ *@width:number of columns
+ *@height:number of rows
  *Descrription: each element in the grid
  *will be intialized to 0.
- *Return: NULL if width or height is 
+ *Return: NULL if width or height is
  *0 or negative or on failure.
  */
 int **alloc_grid(int width, int height)
