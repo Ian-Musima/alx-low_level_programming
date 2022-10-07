@@ -4,7 +4,7 @@
 /**
  *malloc_checked - allocates memory using malloc
  *@b:number of bytes allocated
- *Description: if malloc fails, malloc_checked 
+ *Description: if malloc fails, malloc_checked
  *causes normal process termination with a
  *status value of 98
  *
@@ -16,7 +16,7 @@ void *malloc_checked(unsigned int b)
 
 	p = malloc(b);
 	if (p == NULL)
-		exit (98);
+		exit(98);
 	else
 		return (p);
 }
