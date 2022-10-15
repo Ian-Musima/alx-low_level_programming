@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *print_string - prints strings
+ *print_strings - prints strings
  *@separator:string to be printed between strings
  *@n:number of strings passed to the function
  *
@@ -14,6 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 
 	va_list args;
+
 	va_start(args, n);
 
 
