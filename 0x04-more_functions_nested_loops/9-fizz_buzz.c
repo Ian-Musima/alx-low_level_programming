@@ -21,6 +21,8 @@ int main(void)
 			printf("%s ", "Fizz");
 			continue;
 		}
+		else if (i == 100)
+			printf("%s","Buzz");
 		else if (i % 5 == 0)
 		{
 			printf("%s ", "Buzz");
