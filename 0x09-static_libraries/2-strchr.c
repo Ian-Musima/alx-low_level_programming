@@ -1,10 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *_strchr - check code
- *@s: first
- *@c:second
+ *_strchr - locates a character in a string
+ *@s:string to be evaluated
+ *@c:character to be checked
  *
- *Return:Always 0.
+ *Return: a pointer to the first occurence
+ *of the character c or NULL if character
+ *isn't found.
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
+	}
+	return (NULL);
+}
